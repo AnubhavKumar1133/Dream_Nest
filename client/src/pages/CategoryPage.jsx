@@ -18,7 +18,7 @@ const CategoryPage = () => {
   const getFeedListings = async () => {
     try {
       const response = await fetch(
-          `https://dreamnest-production-58da.up.railway.app/properties?category=${category}`,
+          BASE_URL+`/properties?category=${category}`,
         {
           method: "GET",
         }
