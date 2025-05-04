@@ -39,7 +39,7 @@ const RegisterPage = () => {
         register_form.append(key, formData[key])
       }
 
-      const response = await fetch(BASE_URL+"/auth/register", {
+      const response = await fetch(process.env.BASE_URL+"/auth/register", {
         method: "POST",
         body: register_form
       })
