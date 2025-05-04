@@ -183,7 +183,7 @@ const CreateListing = () => {
               ))}
             </div>
 
-            <h3>Where's your place located?</h3>
+            <h3>Where is your place located?</h3>
             <div className="full">
               <div className="location">
                 <p>Street Address</p>
