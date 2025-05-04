@@ -20,7 +20,7 @@ const ListingDetails = () => {
   const getListingDetails = async () => {
     try {
       const response = await fetch(
-        process.env.BASE_URL+`/properties/${listingId}`,
+        process.env.REACT_APP_BASE_URL+`/properties/${listingId}`,
         {
           method: "GET",
         }
