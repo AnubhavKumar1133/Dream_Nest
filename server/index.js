@@ -21,11 +21,7 @@ app.use("/users", userRoutes)
 
 /* MONGOOSE SETUP */
 const PORT = process.env.PORT||3001;
-mongoose.connect(process.env.MONGO_URI, {
-    dbName: "Dream_Nest",
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-  })
+mongoose.connect(process.env.MONGO_URI)
   .then(() => {
     app.listen(PORT, '0.0.0.0', () => console.log(`Server running on port ${PORT}`));
   })
